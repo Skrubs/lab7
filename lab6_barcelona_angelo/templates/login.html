@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+<title>RnK Login</title>
+{% endblock%}
+
+{% block body %}
+<header id="login_header">
+    <h1>Rooks and Kings Login</h1>
+</header>
+
+<section id="login_section_1">
+   <form method="POST">
+       <input type="text" aria-label="First Name" class="form_input_style"
+              placeholder="UserName", name="Username">
+       </br>
+       <input type="password" aria-label="Password" class="form_input_style" placeholder="Password",
+              name="Password" size="8" maxlength="8">
+       </br>
+       <input type="Submit" class="submit" value="Log in" id="login_button">
+   </form>
+</section>
+{% endblock %}
